@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cb0fc67-10e5-4f98-9de1-5421134feab3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Players.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Swing_Test.java" afterDir="false" />
+    <list default="true" id="6cb0fc67-10e5-4f98-9de1-5421134feab3" name="Changes" comment="update">
+      <change afterPath="$PROJECT_DIR$/src/Board.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -51,6 +50,9 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "rearrange.code.on.save": "true",
     "settings.editor.selected.configurable": "actions.on.save",
     "vue.rearranger.settings.migration": "true"
@@ -93,11 +95,27 @@
       <workItem from="1711530854503" duration="1024000" />
       <workItem from="1712557856881" duration="1851000" />
       <workItem from="1712735948400" duration="1667000" />
-      <workItem from="1713162501009" duration="642000" />
+      <workItem from="1713162501009" duration="1308000" />
+      <workItem from="1713341618738" duration="636000" />
+      <workItem from="1713767469514" duration="599000" />
+      <workItem from="1714327487952" duration="905000" />
     </task>
+    <task id="LOCAL-00001" summary="update">
+      <option name="closed" value="true" />
+      <created>1713165507254</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1713165507254</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
 </project>
