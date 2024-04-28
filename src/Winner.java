@@ -2,9 +2,10 @@ import javax.swing.*;
 
 public class Winner extends Board {
     public Winner() {
+        checker();
     }
 
-    public void checker() {
+    private void checker() {
         //Check Rows
         for (int i = 0; i < 9; i += 3) {
             if (buttons[i].getText().equals(buttons[i + 1].getText()) && buttons[i].getText().equals(buttons[i + 2].getText()) && !buttons[i].isEnabled()) {

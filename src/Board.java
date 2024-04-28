@@ -9,6 +9,7 @@ public class Board implements ActionListener {
     private boolean xTurn = true;
 
     public Board() {
+        //Creates the gameboard
         frame = new JFrame("Tic-Tac-Toe");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         panel = new JPanel();
@@ -26,6 +27,7 @@ public class Board implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        //Changes the button to an X or an O depending on who's turn it is
         JButton button = (JButton) e.getSource();
         if (xTurn) {
             button.setText("X");
@@ -34,10 +36,10 @@ public class Board implements ActionListener {
         }
         button.setEnabled(false);
         xTurn = !xTurn;
-        checker();
     }
 
     public void resetGame() {
+        //Resets the gameboard when a player has won or if it ends in a draw
         for (int i = 0; i < 9; i++) {
             buttons[i].setText("");
             buttons[i].setEnabled(true);
