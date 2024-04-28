@@ -5,6 +5,7 @@ import java.awt.event.*;
 public class Board implements ActionListener {
     protected JButton[] buttons = new JButton[9];
     protected JFrame frame;
+    Winner check = new Winner();
     private JPanel panel;
     private boolean xTurn = true;
 
@@ -36,6 +37,7 @@ public class Board implements ActionListener {
         }
         button.setEnabled(false);
         xTurn = !xTurn;
+        check.checker();
     }
 
     public void resetGame() {
