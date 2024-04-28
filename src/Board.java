@@ -3,9 +3,9 @@ import java.awt.*;
 import java.awt.event.*;
 
 public class Board implements ActionListener {
-    private JFrame frame;
+    protected JButton[] buttons = new JButton[9];
+    protected JFrame frame;
     private JPanel panel;
-    private JButton[] buttons = new JButton[9];
     private boolean xTurn = true;
 
     public Board() {
@@ -26,6 +26,22 @@ public class Board implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        JButton button = (JButton) e.getSource();
+        if (xTurn) {
+            button.setText("X");
+        } else {
+            button.setText("O");
+        }
+        button.setEnabled(false);
+        xTurn = !xTurn;
+        checker();
+    }
 
+    public void resetGame() {
+        for (int i = 0; i < 9; i++) {
+            buttons[i].setText("");
+            buttons[i].setEnabled(true);
+        }
+        xTurn = true;
     }
 }
