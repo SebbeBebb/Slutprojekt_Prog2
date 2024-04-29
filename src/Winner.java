@@ -1,8 +1,25 @@
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class Winner extends Board {
+public class Winner extends Board implements ActionListener {
+    private boolean xTurn = true;
+
     public Winner() {
-        
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        //Changes the button to an X or an O depending on who's turn it is as well as changes whose turn it is
+        JButton button = (JButton) e.getSource();
+        if (xTurn) {
+            button.setText("X");
+        } else {
+            button.setText("O");
+        }
+        button.setEnabled(false);
+        xTurn = !xTurn;
+        checker();
     }
 
     public void checker() {
@@ -45,6 +62,16 @@ public class Winner extends Board {
             JOptionPane.showMessageDialog(frame, "It was a Draw");
             resetGame();
         }
+
+    }
+
+    public void resetGame() {
+        //Resets the game board when a player has won or if it ends in a draw
+        for (int i = 0; i < 9; i++) {
+            buttons[i].setText("");
+            buttons[i].setEnabled(true);
+        }
+        xTurn = true;
     }
 }
 
