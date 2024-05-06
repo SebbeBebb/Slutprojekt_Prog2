@@ -1,0 +1,2 @@
+Cross: 0
+Circle: 0
