@@ -2,10 +2,11 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Winner extends Board implements ActionListener {
+public class Game extends Board implements ActionListener {
     private boolean xTurn = true;
 
-    public Winner() {
+    public Game() {
+        new Scoreboard();
     }
 
     @Override
